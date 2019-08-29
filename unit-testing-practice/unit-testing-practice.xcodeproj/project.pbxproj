@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		EA043BD7231855A200FA9A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043BD6231855A200FA9A2D /* AppDelegate.swift */; };
-		EA043BD9231855A200FA9A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043BD8231855A200FA9A2D /* ViewController.swift */; };
+		EA043BD9231855A200FA9A2D /* JokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043BD8231855A200FA9A2D /* JokeListViewController.swift */; };
 		EA043BDC231855A200FA9A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA043BDA231855A200FA9A2D /* Main.storyboard */; };
 		EA043BDE231855A400FA9A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA043BDD231855A400FA9A2D /* Assets.xcassets */; };
 		EA043BE1231855A400FA9A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA043BDF231855A400FA9A2D /* LaunchScreen.storyboard */; };
 		EA043BEC231855A400FA9A2D /* unit_testing_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043BEB231855A400FA9A2D /* unit_testing_practiceTests.swift */; };
+		EA043BFE23185BC800FA9A2D /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043BFD23185BC800FA9A2D /* MovieListViewController.swift */; };
+		EA043C0023185BE000FA9A2D /* TriviaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043BFF23185BE000FA9A2D /* TriviaListViewController.swift */; };
+		EA043C0223185C0D00FA9A2D /* JokeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0123185C0D00FA9A2D /* JokeDetailViewController.swift */; };
+		EA043C0423185C3D00FA9A2D /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0323185C3D00FA9A2D /* MovieDetailViewController.swift */; };
+		EA043C0623185C8D00FA9A2D /* TriviaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0523185C8D00FA9A2D /* TriviaDetailViewController.swift */; };
+		EA043C0823185C9E00FA9A2D /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0723185C9E00FA9A2D /* Joke.swift */; };
+		EA043C0A23185CAE00FA9A2D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0923185CAE00FA9A2D /* Movie.swift */; };
+		EA043C0C23185CC500FA9A2D /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0B23185CC500FA9A2D /* Trivia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +36,7 @@
 /* Begin PBXFileReference section */
 		EA043BD3231855A200FA9A2D /* unit-testing-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unit-testing-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA043BD6231855A200FA9A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA043BD8231855A200FA9A2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA043BD8231855A200FA9A2D /* JokeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListViewController.swift; sourceTree = "<group>"; };
 		EA043BDB231855A200FA9A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA043BDD231855A400FA9A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA043BE0231855A400FA9A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +44,14 @@
 		EA043BE7231855A400FA9A2D /* unit-testing-practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unit-testing-practiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA043BEB231855A400FA9A2D /* unit_testing_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unit_testing_practiceTests.swift; sourceTree = "<group>"; };
 		EA043BED231855A400FA9A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA043BFD23185BC800FA9A2D /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		EA043BFF23185BE000FA9A2D /* TriviaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaListViewController.swift; sourceTree = "<group>"; };
+		EA043C0123185C0D00FA9A2D /* JokeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailViewController.swift; sourceTree = "<group>"; };
+		EA043C0323185C3D00FA9A2D /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		EA043C0523185C8D00FA9A2D /* TriviaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaDetailViewController.swift; sourceTree = "<group>"; };
+		EA043C0723185C9E00FA9A2D /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		EA043C0923185CAE00FA9A2D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EA043C0B23185CC500FA9A2D /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +125,12 @@
 		EA043BF72318582300FA9A2D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA043BD8231855A200FA9A2D /* ViewController.swift */,
+				EA043BD8231855A200FA9A2D /* JokeListViewController.swift */,
+				EA043C0123185C0D00FA9A2D /* JokeDetailViewController.swift */,
+				EA043BFD23185BC800FA9A2D /* MovieListViewController.swift */,
+				EA043C0323185C3D00FA9A2D /* MovieDetailViewController.swift */,
+				EA043BFF23185BE000FA9A2D /* TriviaListViewController.swift */,
+				EA043C0523185C8D00FA9A2D /* TriviaDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +146,9 @@
 		EA043BF92318583B00FA9A2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA043C0723185C9E00FA9A2D /* Joke.swift */,
+				EA043C0923185CAE00FA9A2D /* Movie.swift */,
+				EA043C0B23185CC500FA9A2D /* Trivia.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,7 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA043BD9231855A200FA9A2D /* ViewController.swift in Sources */,
+				EA043C0023185BE000FA9A2D /* TriviaListViewController.swift in Sources */,
+				EA043C0223185C0D00FA9A2D /* JokeDetailViewController.swift in Sources */,
+				EA043C0A23185CAE00FA9A2D /* Movie.swift in Sources */,
+				EA043BFE23185BC800FA9A2D /* MovieListViewController.swift in Sources */,
+				EA043C0623185C8D00FA9A2D /* TriviaDetailViewController.swift in Sources */,
+				EA043C0C23185CC500FA9A2D /* Trivia.swift in Sources */,
+				EA043BD9231855A200FA9A2D /* JokeListViewController.swift in Sources */,
+				EA043C0423185C3D00FA9A2D /* MovieDetailViewController.swift in Sources */,
+				EA043C0823185C9E00FA9A2D /* Joke.swift in Sources */,
 				EA043BD7231855A200FA9A2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

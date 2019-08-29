@@ -40,7 +40,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="rkI-HC-4nC" kind="show" identifier="movieCellToDetailsSegue" id="AE8-jF-SYb"/>
+                                            <segue destination="rkI-HC-4nC" kind="show" identifier="movieCellToDetailSegue" id="AE8-jF-SYb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -99,7 +99,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ZQp-Yr-IV3" kind="show" identifier="jokeCellToDetailsSegue" id="VbO-3X-Eso"/>
+                                            <segue destination="ZQp-Yr-IV3" kind="show" identifier="jokeCellToDetailSegue" id="VbO-3X-Eso"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -167,7 +167,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="questionCell" textLabel="fcq-mT-Nyt" style="IBUITableViewCellStyleDefault" id="CxX-pO-JG2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="triviaCell" textLabel="fcq-mT-Nyt" style="IBUITableViewCellStyleDefault" id="CxX-pO-JG2">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CxX-pO-JG2" id="Apc-Cf-QUJ">
@@ -184,7 +184,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HPk-Wo-8Fz" kind="show" identifier="questionToDetailsSegue" id="ACn-b6-2rg"/>
+                                            <segue destination="HPk-Wo-8Fz" kind="show" identifier="triviaToDetailSegue" id="ACn-b6-2rg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
