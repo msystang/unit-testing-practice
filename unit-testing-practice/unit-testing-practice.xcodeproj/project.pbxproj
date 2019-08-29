@@ -21,6 +21,12 @@
 		EA043C0823185C9E00FA9A2D /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0723185C9E00FA9A2D /* Joke.swift */; };
 		EA043C0A23185CAE00FA9A2D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0923185CAE00FA9A2D /* Movie.swift */; };
 		EA043C0C23185CC500FA9A2D /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043C0B23185CC500FA9A2D /* Trivia.swift */; };
+		EA043C0E23185DE900FA9A2D /* jokesData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA043C0D23185DE900FA9A2D /* jokesData.json */; };
+		EA043C0F23185DE900FA9A2D /* jokesData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA043C0D23185DE900FA9A2D /* jokesData.json */; };
+		EA043C1123185DF700FA9A2D /* starWarsMovieData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA043C1023185DF700FA9A2D /* starWarsMovieData.json */; };
+		EA043C1223185DF700FA9A2D /* starWarsMovieData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA043C1023185DF700FA9A2D /* starWarsMovieData.json */; };
+		EA043C1423185DFD00FA9A2D /* triviaData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA043C1323185DFD00FA9A2D /* triviaData.json */; };
+		EA043C1523185DFD00FA9A2D /* triviaData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA043C1323185DFD00FA9A2D /* triviaData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,9 @@
 		EA043C0723185C9E00FA9A2D /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		EA043C0923185CAE00FA9A2D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EA043C0B23185CC500FA9A2D /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		EA043C0D23185DE900FA9A2D /* jokesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jokesData.json; sourceTree = SOURCE_ROOT; };
+		EA043C1023185DF700FA9A2D /* starWarsMovieData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starWarsMovieData.json; sourceTree = SOURCE_ROOT; };
+		EA043C1323185DFD00FA9A2D /* triviaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = triviaData.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +165,9 @@
 		EA043BFA2318584E00FA9A2D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EA043C0D23185DE900FA9A2D /* jokesData.json */,
+				EA043C1023185DF700FA9A2D /* starWarsMovieData.json */,
+				EA043C1323185DFD00FA9A2D /* triviaData.json */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -241,8 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA043C1123185DF700FA9A2D /* starWarsMovieData.json in Resources */,
+				EA043C0E23185DE900FA9A2D /* jokesData.json in Resources */,
 				EA043BE1231855A400FA9A2D /* LaunchScreen.storyboard in Resources */,
 				EA043BDE231855A400FA9A2D /* Assets.xcassets in Resources */,
+				EA043C1423185DFD00FA9A2D /* triviaData.json in Resources */,
 				EA043BDC231855A200FA9A2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +266,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA043C0F23185DE900FA9A2D /* jokesData.json in Resources */,
+				EA043C1523185DFD00FA9A2D /* triviaData.json in Resources */,
+				EA043C1223185DF700FA9A2D /* starWarsMovieData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
