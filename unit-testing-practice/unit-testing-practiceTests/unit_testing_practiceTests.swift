@@ -79,8 +79,18 @@ class unit_testing_practiceTests: XCTestCase {
         let moviesDataFromJSON = getMoviesDataFromJSON()
 
         let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
-        let moviesArray = moviesData?.results
+        let moviesArray = moviesData?.movie
         
         XCTAssertTrue(moviesArray != nil, "Could not load Movie array data")
     }
+    
+    func testGetSevenMovies() {
+        let moviesDataFromJSON = getMoviesDataFromJSON()
+        
+        let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
+        let moviesArray = moviesData?.movie
+        
+        XCTAssertTrue(moviesArray?.count == 7, "Expected 7 movies, got different number of movies.")
+    }
+
 }

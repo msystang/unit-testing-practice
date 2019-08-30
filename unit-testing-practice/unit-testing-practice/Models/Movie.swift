@@ -9,7 +9,11 @@
 import Foundation
 
 struct MovieWrapper: Codable {
-    let results: [Movie]
+    let movie: [Movie]
+    
+    private enum CodingKeys: String, CodingKey {
+        case movie = "results"
+    }
     
     static func getAllMovies(from JSONData: Data ) -> MovieWrapper? {
         do {
