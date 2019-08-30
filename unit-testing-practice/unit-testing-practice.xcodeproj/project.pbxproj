@@ -29,6 +29,7 @@
 		EA043C1523185DFD00FA9A2D /* triviaData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA043C1323185DFD00FA9A2D /* triviaData.json */; };
 		EA1250492319B6EA0075C43E /* DataFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1250482319B6EA0075C43E /* DataFetchingService.swift */; };
 		EA12504A2319B72A0075C43E /* DataFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1250482319B6EA0075C43E /* DataFetchingService.swift */; };
+		EA12504C2319C85D0075C43E /* RemovePercentEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA12504B2319C85D0075C43E /* RemovePercentEncoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		EA043C1023185DF700FA9A2D /* starWarsMovieData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starWarsMovieData.json; sourceTree = SOURCE_ROOT; };
 		EA043C1323185DFD00FA9A2D /* triviaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = triviaData.json; sourceTree = SOURCE_ROOT; };
 		EA1250482319B6EA0075C43E /* DataFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchingService.swift; sourceTree = "<group>"; };
+		EA12504B2319C85D0075C43E /* RemovePercentEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovePercentEncoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				EA043C0723185C9E00FA9A2D /* Joke.swift */,
 				EA043C0923185CAE00FA9A2D /* Movie.swift */,
 				EA043C0B23185CC500FA9A2D /* Trivia.swift */,
+				EA12504B2319C85D0075C43E /* RemovePercentEncoding.swift */,
 				EA1250482319B6EA0075C43E /* DataFetchingService.swift */,
 			);
 			path = Models;
@@ -287,6 +290,7 @@
 				EA1250492319B6EA0075C43E /* DataFetchingService.swift in Sources */,
 				EA043C0223185C0D00FA9A2D /* JokeDetailViewController.swift in Sources */,
 				EA043C0A23185CAE00FA9A2D /* Movie.swift in Sources */,
+				EA12504C2319C85D0075C43E /* RemovePercentEncoding.swift in Sources */,
 				EA043BFE23185BC800FA9A2D /* MovieListViewController.swift in Sources */,
 				EA043C0623185C8D00FA9A2D /* TriviaDetailViewController.swift in Sources */,
 				EA043C0C23185CC500FA9A2D /* Trivia.swift in Sources */,

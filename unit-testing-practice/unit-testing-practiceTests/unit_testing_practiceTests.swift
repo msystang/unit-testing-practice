@@ -92,4 +92,13 @@ class unit_testing_practiceTests: XCTestCase {
         XCTAssertTrue(triviaArray?.count == 10, "Expected 10 trivia, got different number of movies.")
     }
 
+    func testRemovePercentEncoding() {
+        let testString = "this%20is%20a%20test%20string"
+        
+        let actualString = testString.removingPercentEncoding
+        let expectedString = "this is a test string"
+        
+        XCTAssertTrue(expectedString == actualString, "Error: expected and actual do not match.")
+    }
+    
 }

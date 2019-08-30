@@ -39,6 +39,10 @@ struct Trivia: Codable {
         case incorrectAnswers = "incorrect_answers"
     }
     
+    func removePercentEncoding(triviaTextRaw: String?) -> String? {
+        let triviaText = triviaTextRaw?.removingPercentEncoding
+        return triviaText
+    }
     
 }
 
