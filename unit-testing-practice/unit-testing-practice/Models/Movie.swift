@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+struct MovieWrapper: Codable {
+    let results: [Movie]
+    
+    static func getAllMovies(from JSONData: Data ) -> MovieWrapper? {
+        do {
+            let allMovies = try JSONDecoder().decode(MovieWrapper?.self, from: JSONData)
+            return allMovies
+        } catch {
+            return nil
+        }
+    }
+}
+
+struct Movie: Codable {
+    let title: String
+    let openingCrawl: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case title
+        case openingCrawl = "opening_crawl"
+    }
+    
+}

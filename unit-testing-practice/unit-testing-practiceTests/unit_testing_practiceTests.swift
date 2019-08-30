@@ -42,14 +42,37 @@ class unit_testing_practiceTests: XCTestCase {
         
         XCTAssertTrue(jokesData != nil, "Could not load Joke data")
     }
-
+    
     func testGetTenJokes() {
         let jokesDataFromJSON = getJokesDataFromJSON()
         
-        if let jokesData = Joke.getAllJokes(from: jokesDataFromJSON) {
-            XCTAssertTrue(jokesData.count == 10, "Expected 10 jokes, got \(jokesData.count) jokes.")
+        let jokesData = Joke.getAllJokes(from: jokesDataFromJSON)
+            
+        XCTAssertTrue(jokesData?.count == 10, "Expected 10 jokes, got different number of jokes.")
+    }
+    
+    // Star Wars Movie Data
+    private func getMoviesDataFromJSON() -> Data {
+        guard let pathToMoviesData = Bundle.main.path(forResource: "starWarsMovieData", ofType: "json") else {
+            fatalError("starWarsMovieData.json file not found")
+        }
+        
+        let moviesURL = URL(fileURLWithPath: pathToMoviesData)
+        
+        do {
+            let moviesData = try Data(contentsOf: moviesURL)
+            return moviesData
+        } catch {
+            fatalError("Could not get data from starWarsMovieData.json: \(error)")
         }
     }
     
+    func testLoadMoviesData() {
+        let moviesDataFromJSON = getMoviesDataFromJSON()
+        
+        let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
+        
+        XCTAssertTrue(moviesData != nil, "Could not load Movie data")
+    }
     
 }
