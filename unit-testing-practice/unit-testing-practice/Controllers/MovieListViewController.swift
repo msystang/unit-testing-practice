@@ -32,6 +32,13 @@ class MovieListViewController: UIViewController {
         movies = MovieWrapper.getAllMovies(from: moviesData)!.movie
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndex = movieListTableView.indexPathForSelectedRow else { fatalError("No cell was selected") }
+        guard segue.identifier == "movieCellToDetailSegue" else { fatalError("Unidentified segue") }
+        guard let movieDetailsVC = segue.destination as? MovieDetailViewController else { fatalError("No destination View Controller") }
+        
+        movieDetailsVC.movie = movies[selectedIndex.row]
+    }
 }
 
 extension MovieListViewController: UITableViewDelegate {}
