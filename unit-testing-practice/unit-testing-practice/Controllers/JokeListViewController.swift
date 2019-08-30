@@ -22,7 +22,7 @@ class JokeListViewController: UIViewController {
         jokeListTableView.delegate = self
         jokeListTableView.dataSource = self
     }
-
+    
 }
 
 extension JokeListViewController: UITableViewDelegate {}

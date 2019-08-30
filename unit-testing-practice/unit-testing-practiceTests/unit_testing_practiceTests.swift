@@ -20,23 +20,8 @@ class unit_testing_practiceTests: XCTestCase {
     }
 
     // MARK: -- Joke Data
-    private func getJokesDataFromJSON() -> Data {
-        guard let pathToJokesData = Bundle.main.path(forResource: "jokesData", ofType: "json") else {
-            fatalError("jokesData.json file not found")
-        }
-        
-        let jokesURL = URL(fileURLWithPath: pathToJokesData)
-        
-        do {
-            let jokesData = try Data(contentsOf: jokesURL)
-            return jokesData
-        } catch {
-            fatalError("Could not get data from jokesData.json: \(error)")
-        }
-    }
-    
     func testJokesDataExists() {
-        let jokesDataFromJSON = getJokesDataFromJSON()
+        let jokesDataFromJSON = DataFetchingService.getJokesDataFromJSON()
         
         let jokesData = Joke.getAllJokes(from: jokesDataFromJSON)
         
@@ -44,7 +29,7 @@ class unit_testing_practiceTests: XCTestCase {
     }
     
     func testGetTenJokes() {
-        let jokesDataFromJSON = getJokesDataFromJSON()
+        let jokesDataFromJSON = DataFetchingService.getJokesDataFromJSON()
         
         let jokesData = Joke.getAllJokes(from: jokesDataFromJSON)
             
@@ -53,23 +38,8 @@ class unit_testing_practiceTests: XCTestCase {
     
     
     // MARK: -- Star Wars Movie Data
-    private func getMoviesDataFromJSON() -> Data {
-        guard let pathToMoviesData = Bundle.main.path(forResource: "starWarsMovieData", ofType: "json") else {
-            fatalError("starWarsMovieData.json file not found")
-        }
-        
-        let moviesURL = URL(fileURLWithPath: pathToMoviesData)
-        
-        do {
-            let moviesData = try Data(contentsOf: moviesURL)
-            return moviesData
-        } catch {
-            fatalError("Could not get data from starWarsMovieData.json: \(error)")
-        }
-    }
-    
     func testMoviesDataExists() {
-        let moviesDataFromJSON = getMoviesDataFromJSON()
+        let moviesDataFromJSON = DataFetchingService.getMoviesDataFromJSON()
         
         let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
         
@@ -77,7 +47,7 @@ class unit_testing_practiceTests: XCTestCase {
     }
  
     func testMoviesArrayExists() {
-        let moviesDataFromJSON = getMoviesDataFromJSON()
+        let moviesDataFromJSON = DataFetchingService.getMoviesDataFromJSON()
 
         let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
         let moviesArray = moviesData?.movie
@@ -86,7 +56,7 @@ class unit_testing_practiceTests: XCTestCase {
     }
     
     func testGetSevenMovies() {
-        let moviesDataFromJSON = getMoviesDataFromJSON()
+        let moviesDataFromJSON = DataFetchingService.getMoviesDataFromJSON()
         
         let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
         let moviesArray = moviesData?.movie
@@ -96,23 +66,8 @@ class unit_testing_practiceTests: XCTestCase {
 
     
     // MARK: -- Trivia Movie Data
-    private func getTriviaDataFromJSON() -> Data {
-        guard let pathToTriviaData = Bundle.main.path(forResource: "triviaData", ofType: "json") else {
-            fatalError("triviaData.json file not found")
-        }
-        
-        let triviaURL = URL(fileURLWithPath: pathToTriviaData)
-        
-        do {
-            let triviaData = try Data(contentsOf: triviaURL)
-            return triviaData
-        } catch {
-            fatalError("Could not get data from triviaData.json: \(error)")
-        }
-    }
-    
     func testTriviaDataExists() {
-        let triviaDataFromJSON = getTriviaDataFromJSON()
+        let triviaDataFromJSON = DataFetchingService.getTriviaDataFromJSON()
         
         let triviaData = TriviaWrapper.getAllTrivia(from: triviaDataFromJSON)
         
@@ -120,7 +75,7 @@ class unit_testing_practiceTests: XCTestCase {
     }
     
     func testTriviaArrayExists() {
-        let triviaDataFromJSON = getTriviaDataFromJSON()
+        let triviaDataFromJSON = DataFetchingService.getTriviaDataFromJSON()
         
         let triviaData = TriviaWrapper.getAllTrivia(from: triviaDataFromJSON)
         let triviaArray = triviaData?.trivia
@@ -129,7 +84,7 @@ class unit_testing_practiceTests: XCTestCase {
     }
     
     func testGetTenTrivia() {
-        let triviaDataFromJSON = getTriviaDataFromJSON()
+        let triviaDataFromJSON = DataFetchingService.getTriviaDataFromJSON()
         
         let triviaData = TriviaWrapper.getAllTrivia(from: triviaDataFromJSON)
         let triviaArray = triviaData?.trivia
