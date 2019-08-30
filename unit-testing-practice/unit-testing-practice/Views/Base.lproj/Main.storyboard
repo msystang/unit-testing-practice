@@ -30,7 +30,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sq6-t0-ifC">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sq6-t0-ifC">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -92,7 +92,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13I-7H-Kcy">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13I-7H-Kcy">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -180,7 +180,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fcq-mT-Nyt">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fcq-mT-Nyt">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -223,11 +223,11 @@
             </objects>
             <point key="canvasLocation" x="1796" y="544"/>
         </scene>
-        <!--Item 1-->
+        <!--Jokes-->
         <scene sceneID="XNt-vv-VcG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YrK-w3-rA0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nAp-t4-8Wn"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YrK-w3-rA0" userLabel="Jokes" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Jokes" id="nAp-t4-8Wn" userLabel="Jokes"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TYM-ef-XgQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -242,11 +242,11 @@
             </objects>
             <point key="canvasLocation" x="45" y="-914"/>
         </scene>
-        <!--Item 2-->
+        <!--Star Wars Movies-->
         <scene sceneID="hvJ-Qe-tM7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPS-Dv-0YE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="yDR-hB-ilA"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPS-Dv-0YE" userLabel="Star Wars Movies" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Star Wars Movies" id="yDR-hB-ilA" userLabel="Star Wars Movies"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2bx-X6-M1n">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -261,11 +261,11 @@
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="-189.50892857142856"/>
         </scene>
-        <!--Item-->
+        <!--Trivia-->
         <scene sceneID="eEu-ax-uLW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="87u-vX-qYi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dbc-Zp-rtD"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="87u-vX-qYi" userLabel="Trivia" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trivia" id="dbc-Zp-rtD" userLabel="Trivia"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jzx-9c-PrK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
