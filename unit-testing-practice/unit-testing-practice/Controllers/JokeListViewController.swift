@@ -31,6 +31,14 @@ class JokeListViewController: UIViewController {
         jokes = Joke.getAllJokes(from: jokesData)!
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndex = jokeListTableView.indexPathForSelectedRow else { fatalError("No cell was selected") }
+        guard segue.identifier == "jokeCellToDetailSegue" else { fatalError("Unidentified segue") }
+        guard let jokeDetailsVC = segue.destination as? JokeDetailViewController else { fatalError("No destination View Controller") }
+        
+        jokeDetailsVC.joke = jokes[selectedIndex.row]
+    }
+    
 }
 
 extension JokeListViewController: UITableViewDelegate {}
