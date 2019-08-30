@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="955" y="-914"/>
         </scene>
-        <!--View Controller-->
+        <!--Joke Detail View Controller-->
         <scene sceneID="AWg-MQ-ZUN">
             <objects>
-                <viewController id="ZQp-Yr-IV3" sceneMemberID="viewController">
+                <viewController id="ZQp-Yr-IV3" customClass="JokeDetailViewController" customModule="unit_testing_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eh0-cn-fqb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +152,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="caU-Ip-xkD"/>
                     </view>
+                    <connections>
+                        <outlet property="jokeLabel" destination="5SR-GE-Z4s" id="bow-Yc-Ah6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AT2-20-Rcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
