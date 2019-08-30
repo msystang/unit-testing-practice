@@ -75,5 +75,12 @@ class unit_testing_practiceTests: XCTestCase {
         XCTAssertTrue(moviesData != nil, "Could not load Movie data")
     }
  
-    
+    func testMoviesArrayExists() {
+        let moviesDataFromJSON = getMoviesDataFromJSON()
+
+        let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
+        let moviesArray = moviesData?.results
+        
+        XCTAssertTrue(moviesArray != nil, "Could not load Movie array data")
+    }
 }
