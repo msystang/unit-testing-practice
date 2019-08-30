@@ -95,7 +95,7 @@ class unit_testing_practiceTests: XCTestCase {
     func testRemovePercentEncoding() {
         let testString = "this%20is%20a%20test%20string"
         
-        let actualString = testString.removingPercentEncoding
+        let actualString = testString.removePercentEncoding()
         let expectedString = "this is a test string"
         
         XCTAssertTrue(expectedString == actualString, "Error: expected and actual do not match.")
