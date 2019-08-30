@@ -45,7 +45,7 @@ extension TriviaListViewController: UITableViewDataSource {
         let cell = triviaListTableView.dequeueReusableCell(withIdentifier: "triviaCell", for: indexPath)
         let trivia = allTrivia[indexPath.row]
         
-        cell.textLabel?.text = trivia.question
+        cell.textLabel?.text = trivia.question.removePercentEncoding()
         
         return cell
     }
