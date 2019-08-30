@@ -43,4 +43,13 @@ class unit_testing_practiceTests: XCTestCase {
         XCTAssertTrue(jokesData != nil, "Could not load Joke data")
     }
 
+    func testGetTenJokes() {
+        let jokesDataFromJSON = getJokesDataFromJSON()
+        
+        if let jokesData = Joke.getAllJokes(from: jokesDataFromJSON) {
+            XCTAssertTrue(jokesData.count == 10, "Expected 10 jokes, got \(jokesData.count) jokes.")
+        }
+    }
+    
+    
 }
