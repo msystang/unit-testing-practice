@@ -16,11 +16,19 @@ class JokeListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        loadJokeData()
+        
     }
 
-    func configureTableView() {
+    private func configureTableView() {
         jokeListTableView.delegate = self
         jokeListTableView.dataSource = self
+    }
+    
+    private func loadJokeData() {
+        let jokesData = DataFetchingService.getJokesDataFromJSON()
+        // refactor later to not force unwrap, error enum?
+        jokes = Joke.getAllJokes(from: jokesData)!
     }
     
 }
