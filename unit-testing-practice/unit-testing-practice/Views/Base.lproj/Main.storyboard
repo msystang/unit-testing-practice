@@ -133,7 +133,23 @@
                     <view key="view" contentMode="scaleToFill" id="eh0-cn-fqb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-GE-Z4s">
+                                <rect key="frame" x="20" y="425.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ymd-vv-uYZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5SR-GE-Z4s" firstAttribute="centerX" secondItem="caU-Ip-xkD" secondAttribute="centerX" id="I00-io-7By"/>
+                            <constraint firstItem="5SR-GE-Z4s" firstAttribute="centerY" secondItem="caU-Ip-xkD" secondAttribute="centerY" id="eKl-bH-Lfy"/>
+                            <constraint firstItem="5SR-GE-Z4s" firstAttribute="leading" secondItem="caU-Ip-xkD" secondAttribute="leading" constant="20" id="xGV-e6-ft7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="caU-Ip-xkD"/>
                     </view>
                 </viewController>
