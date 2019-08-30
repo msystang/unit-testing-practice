@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1796" y="-190"/>
         </scene>
-        <!--View Controller-->
+        <!--Joke List View Controller-->
         <scene sceneID="uvT-QV-N5a">
             <objects>
-                <viewController id="RXb-9A-lgu" sceneMemberID="viewController">
+                <viewController id="RXb-9A-lgu" customClass="JokeListViewController" customModule="unit_testing_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hd7-9t-oAo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +115,9 @@
                         <viewLayoutGuide key="safeArea" id="Mil-sw-bGf"/>
                     </view>
                     <navigationItem key="navigationItem" id="C5e-iW-zmQ"/>
+                    <connections>
+                        <outlet property="jokeListTableView" destination="NHf-Bj-ITA" id="FhD-HA-ilF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJf-FW-jPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
