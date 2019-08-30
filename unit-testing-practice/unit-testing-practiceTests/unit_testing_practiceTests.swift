@@ -125,7 +125,7 @@ class unit_testing_practiceTests: XCTestCase {
         let triviaData = TriviaWrapper.getAllTrivia(from: triviaDataFromJSON)
         let triviaArray = triviaData?.trivia
         
-        XCTAssertTrue(triviaArray != nil, "Could not load Movie array data")
+        XCTAssertTrue(triviaArray != nil, "Could not load trivia array data")
     }
     
     func testGetTenTrivia() {
