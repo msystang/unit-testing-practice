@@ -19,7 +19,7 @@ class unit_testing_practiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    // Joke Data
+    // MARK: -- Joke Data
     private func getJokesDataFromJSON() -> Data {
         guard let pathToJokesData = Bundle.main.path(forResource: "jokesData", ofType: "json") else {
             fatalError("jokesData.json file not found")
@@ -51,7 +51,8 @@ class unit_testing_practiceTests: XCTestCase {
         XCTAssertTrue(jokesData?.count == 10, "Expected 10 jokes, got different number of jokes.")
     }
     
-    // Star Wars Movie Data
+    
+    // MARK: -- Star Wars Movie Data
     private func getMoviesDataFromJSON() -> Data {
         guard let pathToMoviesData = Bundle.main.path(forResource: "starWarsMovieData", ofType: "json") else {
             fatalError("starWarsMovieData.json file not found")
@@ -92,5 +93,32 @@ class unit_testing_practiceTests: XCTestCase {
         
         XCTAssertTrue(moviesArray?.count == 7, "Expected 7 movies, got different number of movies.")
     }
+
+    
+    // MARK: -- Trivia Movie Data
+    private func getTriviaDataFromJSON() -> Data {
+        guard let pathToTriviaData = Bundle.main.path(forResource: "triviaData", ofType: "json") else {
+            fatalError("triviaData.json file not found")
+        }
+        
+        let triviaURL = URL(fileURLWithPath: pathToTriviaData)
+        
+        do {
+            let triviaData = try Data(contentsOf: triviaURL)
+            return triviaData
+        } catch {
+            fatalError("Could not get data from triviaData.json: \(error)")
+        }
+    }
+    
+    func testTriviaDataExists() {
+        let triviaDataFromJSON = getTriviaDataFromJSON()
+        
+        let triviaData = TriviaWrapper.getAllTrivia(from: triviaDataFromJSON)
+        
+        XCTAssertTrue(triviaData != nil, "Could not load Trivia data")
+    }
+    
+    
 
 }
