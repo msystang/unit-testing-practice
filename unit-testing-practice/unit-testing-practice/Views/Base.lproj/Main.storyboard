@@ -58,20 +58,39 @@
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="-189.50892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="50W-No-eKy">
             <objects>
-                <viewController id="rkI-HC-4nC" sceneMemberID="viewController">
+                <viewController id="rkI-HC-4nC" customClass="MovieDetailViewController" customModule="unit_testing_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QW4-R2-ijy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X8-ix-hyn">
+                                <rect key="frame" x="20" y="425.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="odD-dz-L6S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5X8-ix-hyn" firstAttribute="centerY" secondItem="ECz-gv-Z9X" secondAttribute="centerY" id="bAx-iC-V1z"/>
+                            <constraint firstItem="5X8-ix-hyn" firstAttribute="centerX" secondItem="ECz-gv-Z9X" secondAttribute="centerX" id="ctC-wp-8nk"/>
+                            <constraint firstItem="5X8-ix-hyn" firstAttribute="leading" secondItem="ECz-gv-Z9X" secondAttribute="leading" constant="20" id="kE5-Sv-dPj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ECz-gv-Z9X"/>
                     </view>
+                    <connections>
+                        <outlet property="crawlLabel" destination="5X8-ix-hyn" id="hsH-4F-boI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCI-TF-4yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-190"/>
+            <point key="canvasLocation" x="1795.6521739130437" y="-190.17857142857142"/>
         </scene>
         <!--Joke List View Controller-->
         <scene sceneID="uvT-QV-N5a">

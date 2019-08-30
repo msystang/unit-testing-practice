@@ -10,10 +10,15 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
     var movie: Movie?
+    @IBOutlet weak var crawlLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureObjects()
+    }
+    
+    private func configureObjects() {
+        crawlLabel.text = movie?.openingCrawl
     }
  
 
