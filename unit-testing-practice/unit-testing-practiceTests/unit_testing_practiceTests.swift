@@ -67,12 +67,13 @@ class unit_testing_practiceTests: XCTestCase {
         }
     }
     
-    func testLoadMoviesData() {
+    func testMoviesDataExists() {
         let moviesDataFromJSON = getMoviesDataFromJSON()
         
         let moviesData = MovieWrapper.getAllMovies(from: moviesDataFromJSON)
         
         XCTAssertTrue(moviesData != nil, "Could not load Movie data")
     }
+ 
     
 }
