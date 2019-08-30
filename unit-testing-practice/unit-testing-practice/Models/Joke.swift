@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct Joke: Codable {
+    let setup: String
+    let punchline: String
+    
+    static func getAllJokes(from JSONData: Data ) -> [Joke]? {
+        do {
+            let allJokes = try JSONDecoder().decode([Joke]?.self, from: JSONData)
+            return allJokes
+        } catch {
+            return nil
+        }
+    }
+}
